@@ -10,3 +10,9 @@ enum Link {
     Empty,
     More(Box<Node>),
 }
+
+impl List {
+    pub fn new() -> Self {
+        List { head: Link::Empty }
+    }
+}
